@@ -20,5 +20,5 @@ html = 'https://raw.githubusercontent.com/datasets/geo-countries/master/data/cou
 geo_data = h.extract_json_html(html)
 
 world_map = folium.Map(tiles='Stamen Toner', zoom_start=7)
-world_map.choropleth(geo_data=geo_data, topojson='features.properties.ADMIN')
+world_map.choropleth(geo_data=geo_data)
 world_map.save("mymap.html")
